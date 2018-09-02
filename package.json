@@ -1,0 +1,10 @@
+{
+  "name": "socialblade-js",
+  "version": "1.0.0",
+  "description": "Library for Social Blade in JavaScript",
+  "main": "index.js",
+  "repository": "https://github.com/TimothyCole/socialblade-js",
+  "author": "Timothy Cole <tim@socialblade.com>",
+  "license": "BSD 3-Clause",
+  "private": false
+}
