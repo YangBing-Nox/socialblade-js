@@ -7,7 +7,7 @@
   "author": "Timothy Cole <tim@socialblade.com>",
   "license": "BSD 3-Clause",
   "private": false,
-  "dependencies": {
-    "axios": "^0.18.0"
+  "devDependencies": {
+    "node-fetch": "^2.2.0"
   }
 }
