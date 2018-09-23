@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - 10.8.0
+- 10.8.0
 cache:
   directories:
   - node_modules
@@ -11,14 +11,13 @@ script:
 - npm test
 notifications:
   email: false
-
 before_deploy:
-  - npm install --production
+- npm install --production
 deploy:
   provider: npm
   email: tim@timcole.me
   api_key:
-    secure: npEyAIyKZugFU01uyviotNt6wjIdMlGcLwNeuZVkUWxlIMrUHw4TeAaONbb+uB3DjKSRlpU+GjE4hkyYu1sQK4hRizH/fzYDeL96HLJhsFUBvnUnTt6cn8lEO7snlYVDBQ2sux9lprrugjQyMVJJXjjA3TJvLHUx6ym5O+XjCVUnq09PFdiFFAdR2VONQ3f5HB2EweoDCF2Zy4JjfUb5G6yDEHAejyH6wa6FaTo9a8suEiy7CLePwwV5MTAkG8DC0h2nlmyoSvWgDFqtI4uRq8neNJih6RRpkyZkLZP5hmDcrZAhntArsnz43Z89fiIMHxPYUb4nadEG0Nslx3ExhsOYs/1D9MUNEDOXyAgxOtJmjrX6ux3grwSk8W88G8kS7WV86R+FRjTBsyro56NV7/VL4OVFm55jkgoFFD0DtSejgG/6+kumtJvpoR1vaVl+bCTs4fnENtw3LsjiRhMOoOG+0I8532unQbl29KSUPpey91XgDVwDq7x35GG2KY6R8uMxQCy44tqU2/uwZ7mu7Li07G5Ieelc8V4HdTdbGroXqVg2DyTlh+a6mz6EI3Qn8o/yjGqYeo2+b8U9vrrX7emfkuFwwPkYyk/2kC+CQLn+oM7Y0698PlGkxKDQPGF5F8oDoEnZLidphtf1O0ufFv+Sbc1ezvgM5g4NI/gDKeg=
+    secure: kBE+hGBJQXpSWWQzY7ldwX0W2HVBHg6onPhJGn+w8bvmejmwzVhV9FM6Ca7w3z0i2gfITesnttZKV9XIE/abZ5YxSHbg+/ra6O2lgecR5mMBAmx3W5AZqiehPfQFtTKJJAeda14IDZHSZ8BGeLQ/mtsY+3oGhPEWf33KHv9Ncuv4djwYcItja3FzE/s2Y9nCK8833GL7n7a+MpF1mUThaDBWlLqBijFSPf0UpDKxpbJyk5fXxqb36KR8/y19qnXsu44Yxeb8l+N5OXIMr3iXwYn7s/0SdPWyZaCv950CSaHgCsWIM+GsLi8FHwPEXPhaSWv4ugyWGRCakNdrMYnrNbr3Xbyh4hyLo7ufsUKtFL1JZDJt3GSP7UMurKdDiBLlmZeN7uXU4GH9ZlHALiJ19N2NTskYTNF+7aYxpnl8A/IwrXnitAyCygVkRQNWyE4301MEnuMKB2ezw1I7L1bl0JMDexXS0PFK/iaDJgf+hJiHu+i1K559DlzlNn/42yEBl4nmPTHSwo+gC4JLW5aRLS2Nuv4i9BykFH8tUMejfR0LHvVzWkY4Acel5PwVCjkwBjsuMgFZQDNEm49Ak+JN9FSQRiNFVEM9SWCQU4r9YRuLXIyALX+muZjzxh0t6rY1m1nBhMy9SMjbZpkIzS0eR/B3erasgtxWjAfclYkMZvE=
   skip_cleanup: true
   on:
     repo: TimothyCole/socialblade-js
