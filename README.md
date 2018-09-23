@@ -1,4 +1,4 @@
-# Social Blade API in JavaScript [<img align="right" src="https://socialblade.com/images/media/red/2.png">](https://github.com/TimothyCole/socialblade-js)
+# Social Blade API in JavaScript [<img align="right" src="https://cdn.tcole.me/socialblade-small.png">](https://github.com/TimothyCole/socialblade-js)
 
 [![Build Status](https://travis-ci.com/TimothyCole/socialblade-js.svg?branch=master)](https://travis-ci.com/TimothyCole/socialblade-js)
 [![Personal Discord](https://img.shields.io/discord/313591755180081153.svg?label=Personal%20Discord&colorB=308bcd&maxAge=3600)](https://discordapp.com/invite/YFtfGwq)
