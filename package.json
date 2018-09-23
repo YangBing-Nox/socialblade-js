@@ -1,6 +1,6 @@
 {
-  "name": "socialblade-js",
-  "version": "1.0.0",
+  "name": "socialblade",
+  "version": "0.0.1",
   "description": "Library for Social Blade in JavaScript",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -11,6 +11,15 @@
     "prepublish": "npm run build"
   },
   "repository": "https://github.com/TimothyCole/socialblade-js",
+  "bugs": {
+    "url": "https://github.com/TimothyCole/socialblade-js/issues"
+  },
+  "keywords": [
+    "socialblade",
+    "social blade",
+    "modesttim",
+    "Timothy Cole"
+  ],
   "author": "Timothy Cole <tim@socialblade.com>",
   "license": "BSD 3-Clause",
   "private": false,
