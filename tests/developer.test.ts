@@ -4,7 +4,7 @@ import { describe, it } from 'mocha';
 import { SocialBladeClient, IDeveloper } from '../src/index';
 
 describe('Login with an Developer Key', () => {
-	it('Should be Valid' , async () => {
+	it('Should be Valid', async () => {
 		const socialblade: SocialBladeClient = new SocialBladeClient();
 		const auth: IDeveloper = await socialblade.Auth(
 			process.env.SOCIALBLADE_KEY
@@ -14,7 +14,7 @@ describe('Login with an Developer Key', () => {
 		expect(socialblade.isAuthed()).to.be.true;
 	});
 	
-	it('Should be Invalid' , async () => {
+	it('Should be Invalid', async () => {
 		const socialblade: SocialBladeClient = new SocialBladeClient();
 		const auth: IDeveloper = await socialblade.Auth(
 			"KappaPride"

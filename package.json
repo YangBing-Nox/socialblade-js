@@ -1,6 +1,6 @@
 {
   "name": "socialblade",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Library for Social Blade in JavaScript",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -30,7 +30,6 @@
     "@types/request-promise-native": "^1.0.15",
     "chai": "^4.1.2",
     "mocha": "^5.2.0",
-    "node-fetch": "^2.2.0",
     "ts-node": "^7.0.1",
     "typescript": "^3.0.3"
   },
