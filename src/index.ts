@@ -8,3 +8,4 @@ export * from './client';
 // ---------------------------------------------
 export * from './interfaces/client.interface';
 export * from './interfaces/user.interface';
+export * from './interfaces/dev.interface';

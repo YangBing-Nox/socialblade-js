@@ -3,6 +3,7 @@ import * as request from 'request-promise-native';
 
 import { IClient } from './interfaces/client.interface';
 import { IUser } from './interfaces/user.interface';
+import { IDeveloper } from './interfaces/dev.interface';
 
 import { Endpoints } from './utils/endpoints';
 
@@ -32,7 +33,7 @@ export class SocialBladeClient {
 	  });
 	}
 
-	public isAuthed (): boolean { return this.Client.user !== undefined || this.Client.token !== undefined }
+	public isAuthed (): boolean { return this.Client.user !== undefined || this.Client.key !== undefined }
 
 	public async AuthAsUser (email: IClient['email'], token: IClient['token']): Promise<IUser> {
 		const response = <RequestResponse> await this.Http.get({
@@ -49,6 +50,22 @@ export class SocialBladeClient {
 			user: true,
 			email, token
 		};
+
+		return body;
+	}
+
+	public async Auth (key: IClient['key']): Promise<IDeveloper> {
+		const response = <RequestResponse> await this.Http.get({
+			uri: Endpoints.DeveloperAuth,
+			qs: { key }
+		})
+		const body = <IDeveloper> response.body;
+
+		// If there is an error we can just return the body
+		if (body.status.error) return body;
+
+		// If there isn't an error then we can set the client as active then return the body
+		this.Client = <IClient> { user: false, key };
 
 		return body;
 	}

@@ -1,15 +1,13 @@
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
 
-import { SocialBladeClient, IUser } from '../src/index';
+import { SocialBladeClient, IDeveloper } from '../src/index';
 
-
-describe('Login with an Email and Token', () => {
+describe('Login with an Developer Key', () => {
 	it('Should be Valid' , async () => {
 		const socialblade: SocialBladeClient = new SocialBladeClient();
-		const auth: IUser = await socialblade.AuthAsUser(
-			process.env.SOCIALBLADE_EMAIL,
-			process.env.SOCIALBLADE_TOKEN
+		const auth: IDeveloper = await socialblade.Auth(
+			process.env.SOCIALBLADE_KEY
 		);
 
 		expect(auth.status.error).to.be.undefined;
@@ -18,12 +16,11 @@ describe('Login with an Email and Token', () => {
 	
 	it('Should be Invalid' , async () => {
 		const socialblade: SocialBladeClient = new SocialBladeClient();
-		const auth: IUser = await socialblade.AuthAsUser(
-			process.env.SOCIALBLADE_EMAIL,
+		const auth: IDeveloper = await socialblade.Auth(
 			"KappaPride"
 		);
-			
-		expect(auth.status.error).to.be.true;
+
+		expect(auth.status.error).to.be.not.undefined;
 		expect(socialblade.isAuthed()).to.be.false;
 	});
 });
