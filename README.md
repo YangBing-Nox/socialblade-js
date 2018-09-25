@@ -39,6 +39,7 @@ socialblade.AuthAsUser("User Email", "User Access Token").then((data: IUser) => 
 	console.log(data)
 });
 ```
+
 #### ES6+
 ```js
 const SocialBladeClient = require("socialblade").SocialBladeClient;
@@ -51,8 +52,9 @@ socialblade.Auth("Third-Party API Key").then(console.log)
 socialblade.AuthAsUser("User Email", "User Access Token").then(console.log)
 ```
 
-## Example
-_Examples coming soon. Library still early development_
+## Examples
+#### Get YouTube Channel Stats &mdash; [ [Third-Party Auth](examples/youtube-stats-Auth.js), [First-Party Auth](examples/youtube-stats-AuthAsUser.js) ]
+_More examples coming soon. Library still early development_
 
 ## Troubleshooting
 If you have official access to the Social Blade API via express permission from the company then feel free to contact me via [Twitter](https://twitter.com/messages/compose?recipient_id=1690693537) or [email me](mailto:tim@timcole.me?cc=tim@socialblade.com&subject=Social%20Blade%20JavaScript%20Library%20Inquiry) for any help.

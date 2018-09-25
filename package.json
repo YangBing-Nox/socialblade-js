@@ -1,7 +1,7 @@
 {
   "name": "socialblade",
-  "version": "0.0.4",
-  "description": "Library for Social Blade in JavaScript",
+  "version": "0.0.5",
+  "description": "Library for Social Blade's Official API in JavaScript (TypeScript)",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
