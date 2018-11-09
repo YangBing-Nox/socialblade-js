@@ -1,11 +1,11 @@
 import { SocialBladeClient } from "../client";
 
-import { RequestResponse } from 'request';
-import { IYouTubeStats } from '../interfaces/ytstatsdata.interface';
-import { Endpoints } from '../utils/endpoints';
+import { RequestResponse } from "request";
+import { IYouTubeStats } from "../interfaces/ytstatsdata.interface";
+import { Endpoints } from "../utils/endpoints";
 
 export class YouTube {
-	$parent: SocialBladeClient;
+	public $parent: SocialBladeClient;
 
 	public async StatsYouTube (identifier: string): Promise<IYouTubeStats> {
 		const response = <RequestResponse> await this.$parent.Http.get({
@@ -13,10 +13,10 @@ export class YouTube {
 			qs: {
 				query: `statistics`,
 				username: identifier,
-				...this.$parent.Client
-			}
+				...this.$parent.Client,
+			},
 		});
-		let body = <IYouTubeStats> response.body;
+		const body = <IYouTubeStats> response.body;
 
 		// Set proper types since everything is a string in the API.
 		// #region data

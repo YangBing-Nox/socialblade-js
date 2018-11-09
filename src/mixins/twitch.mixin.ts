@@ -1,11 +1,11 @@
 import { SocialBladeClient } from "../client";
 
-import { RequestResponse } from 'request';
-import { ITwitchStats } from '../interfaces/ttvstatsdata.interface';
-import { Endpoints } from '../utils/endpoints';
+import { RequestResponse } from "request";
+import { ITwitchStats } from "../interfaces/ttvstatsdata.interface";
+import { Endpoints } from "../utils/endpoints";
 
 export class Twitch {
-	$parent: SocialBladeClient;
+	public $parent: SocialBladeClient;
 
 	public async StatsTwitch (identifier: string): Promise<ITwitchStats> {
 		const response = <RequestResponse> await this.$parent.Http.get({
@@ -13,10 +13,10 @@ export class Twitch {
 			qs: {
 				query: `statistics`,
 				username: identifier,
-				...this.$parent.Client
-			}
+				...this.$parent.Client,
+			},
 		});
-		let body = <ITwitchStats> response.body;
+		const body = <ITwitchStats> response.body;
 
 		// Set proper types since everything is a string in the API.
 		// #region data
