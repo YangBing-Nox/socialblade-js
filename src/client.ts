@@ -4,12 +4,14 @@ import * as request from 'request-promise-native';
 import { IClient } from './interfaces/client.interface';
 import { IUser } from './interfaces/user.interface';
 import { IDeveloper } from './interfaces/dev.interface';
+
 import { IYouTubeStats } from './interfaces/ytstatsdata.interface';
+import { ITwitchStats } from './interfaces/ttvstatsdata.interface';
 
 import { Endpoints } from './utils/endpoints';
 
-import { YouTube } from './mixins/index';
-const mixins = [ YouTube ];
+import { YouTube, Twitch } from './mixins/index';
+const mixins = [YouTube, Twitch ];
 export class SocialBladeClient implements YouTube {
 	public $parent: SocialBladeClient = this;
 
@@ -77,6 +79,7 @@ export class SocialBladeClient implements YouTube {
 	}
 
 	StatsYouTube: (identifier: string) => Promise<IYouTubeStats>;
+	StatsTwitch: (identifier: string) => Promise<ITwitchStats>;
 }
 
 // Invoke Mixins

@@ -54,6 +54,7 @@ socialblade.AuthAsUser("User Email", "User Access Token").then(console.log)
 
 ## Examples
 #### Get YouTube Channel Stats &mdash; [ [Third-Party Auth](examples/youtube-stats-Auth.js), [First-Party Auth](examples/youtube-stats-AuthAsUser.js) ]
+#### Get Twitch Channel Stats &mdash; [ [Third-Party Auth](examples/twitch-stats-Auth.js), [First-Party Auth](examples/twitch-stats-AuthAsUser.js) ]
 _More examples coming soon. Library still early development_
 
 ## Troubleshooting
