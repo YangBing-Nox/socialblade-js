@@ -1,7 +1,7 @@
 import { SocialBladeClient } from "../client";
 
 import { RequestResponse } from "request";
-import { IYouTubeStats } from "../interfaces/ytstatsdata.interface";
+import { IYouTubeStats } from "../interfaces/youtube.statsdata.interface";
 import { Endpoints } from "../utils/endpoints";
 
 export class YouTube {

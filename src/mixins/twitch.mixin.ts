@@ -1,7 +1,7 @@
 import { SocialBladeClient } from "../client";
 
 import { RequestResponse } from "request";
-import { ITwitchStats } from "../interfaces/ttvstatsdata.interface";
+import { ITwitchStats } from "../interfaces/twitch.statsdata.interface";
 import { Endpoints } from "../utils/endpoints";
 
 export class Twitch {

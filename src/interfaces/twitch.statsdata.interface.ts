@@ -1,17 +1,11 @@
+import { IResponseStatus } from "./common.interface";
+
 export interface ITwitchStats {
-	status: ITwitchStatsStatus;
+	status: IResponseStatus;
 	id: ITwitchStatsID;
 	data?: ITwitchStatsData;
 	rank?: ITwitchStatsRank;
 	data_daily?: ITwitchStatsDataDaily[];
-};
-
-export interface ITwitchStatsStatus {
-	cache: string;
-	type: string;
-	response: number;
-	error: boolean;
-	message?: string;
 };
 
 export interface ITwitchStatsID {

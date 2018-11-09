@@ -9,5 +9,5 @@ export * from './client';
 export * from './interfaces/client.interface';
 export * from './interfaces/user.interface';
 export * from './interfaces/dev.interface';
-export * from './interfaces/ytstatsdata.interface';
-export * from './interfaces/ttvstatsdata.interface';
+export * from './interfaces/youtube.statsdata.interface';
+export * from './interfaces/twitch.statsdata.interface';

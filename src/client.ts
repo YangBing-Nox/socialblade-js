@@ -5,8 +5,8 @@ import { IClient } from './interfaces/client.interface';
 import { IUser } from './interfaces/user.interface';
 import { IDeveloper } from './interfaces/dev.interface';
 
-import { IYouTubeStats } from './interfaces/ytstatsdata.interface';
-import { ITwitchStats } from './interfaces/ttvstatsdata.interface';
+import { IYouTubeStats } from './interfaces/youtube.statsdata.interface';
+import { ITwitchStats } from './interfaces/twitch.statsdata.interface';
 
 import { Endpoints } from './utils/endpoints';
 
