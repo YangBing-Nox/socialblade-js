@@ -6,20 +6,20 @@ export interface IYouTubeStats {
 	charts?: IYouTubeStatsCharts;
 	social?: IYouTubeStatsSocial;
 	data_daily?: IYouTubeStatsDataDaily[];
-}
+};
 
 export interface IYouTubeStatsStatus {
 	response: number;
 	error: boolean | string;
 	message?: string;
-}
+};
 
 export interface IYouTubeStatsID {
 	type?: string;
 	channelid?: string;
 	username?: string;
 	cusername?: string;
-}
+};
 
 export interface IYouTubeStatsData {
 	username: string;
@@ -37,7 +37,7 @@ export interface IYouTubeStatsData {
 	avgdailyviews: number;
 	partner: boolean;
 	isVerified: boolean;
-}
+};
 
 export interface IYouTubeStatsRank {
 	rank: string;
@@ -48,7 +48,7 @@ export interface IYouTubeStatsRank {
 	raw: IYouTubeStatsRankRaw;
 	grade_raw: string;
 	grade: string;
-}
+};
 
 export interface IYouTubeStatsRankRaw {
 	rank: number;
@@ -56,13 +56,13 @@ export interface IYouTubeStatsRankRaw {
 	viewsrank: number;
 	countryrank: number;
 	channeltyperank: number;
-}
+};
 
 export interface IYouTubeStatsCharts {
 	subs: IYouTubeStatsChartsSubs;
 	views: IYouTubeStatsChartsViews;
 	growth: IYouTubeStatsChartsGrowth;
-}
+};
 
 export interface IYouTubeStatsChartsSubs {
 	subs14: number;
@@ -71,7 +71,7 @@ export interface IYouTubeStatsChartsSubs {
 	subs90: number;
 	subs180: number;
 	subs365: number;
-}
+};
 
 export interface IYouTubeStatsChartsViews {
 	views14: number;
@@ -80,22 +80,22 @@ export interface IYouTubeStatsChartsViews {
 	views90: number;
 	views180: number;
 	views365: number;
-}
+};
 
 export interface IYouTubeStatsChartsGrowth {
 	subs: number;
 	views: number;
-}
+};
 
 export interface IYouTubeStatsSocial {
 	googleplus: string;
 	facebook: string;
 	twitter: string;
 	instagram: string;
-}
+};
 
 export interface IYouTubeStatsDataDaily {
 	date: Date;
 	subs: number;
 	views: number;
-}
+};

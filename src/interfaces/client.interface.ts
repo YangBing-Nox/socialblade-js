@@ -3,4 +3,4 @@ export interface IClient {
 	email: string;
 	token: string;
 	key: string;
-}
+};

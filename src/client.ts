@@ -36,7 +36,7 @@ export class SocialBladeClient implements YouTube {
 				"User-Agent": this.UserAgent,
 				"Authorization": this.Client.user ? `${this.Client.email}::${this.Client.token}` : this.Client.key
 			}
-	  });
+		});
 	}
 
 	public isAuthed (): boolean { return this.Client.user !== undefined || this.Client.key !== undefined }
@@ -45,7 +45,7 @@ export class SocialBladeClient implements YouTube {
 		const response = <RequestResponse> await this.Http.get({
 			uri: Endpoints.UserAuth,
 			qs: { email, token }
-		})
+		});
 		const body = <IUser> response.body;
 
 		// If there is an error we can just return the body
@@ -64,7 +64,7 @@ export class SocialBladeClient implements YouTube {
 		const response = <RequestResponse> await this.Http.get({
 			uri: Endpoints.DeveloperAuth,
 			qs: { key }
-		})
+		});
 		const body = <IDeveloper> response.body;
 
 		// If there is an error we can just return the body
@@ -83,4 +83,4 @@ export class SocialBladeClient implements YouTube {
 const base: any = SocialBladeClient;
 mixins.map((mixin: any) => {
 	Object.getOwnPropertyNames(mixin.prototype).map(name => { base.prototype[name] = mixin.prototype[name]; });
-})
+});

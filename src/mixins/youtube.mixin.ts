@@ -48,19 +48,19 @@ export class YouTube {
 		// #region charts
 		if (!body.charts) return body;
 		// toNumber -- Subs
-		body.charts.subs.subs14 = Number(body.charts.subs.subs14)
-		body.charts.subs.subs30 = Number(body.charts.subs.subs30)
-		body.charts.subs.subs60 = Number(body.charts.subs.subs60)
-		body.charts.subs.subs90 = Number(body.charts.subs.subs90)
-		body.charts.subs.subs180 = Number(body.charts.subs.subs180)
-		body.charts.subs.subs365 = Number(body.charts.subs.subs365)
+		body.charts.subs.subs14 = Number(body.charts.subs.subs14);
+		body.charts.subs.subs30 = Number(body.charts.subs.subs30);
+		body.charts.subs.subs60 = Number(body.charts.subs.subs60);
+		body.charts.subs.subs90 = Number(body.charts.subs.subs90);
+		body.charts.subs.subs180 = Number(body.charts.subs.subs180);
+		body.charts.subs.subs365 = Number(body.charts.subs.subs365);
 		// Views
-		body.charts.views.views14 = Number(body.charts.views.views14)
-		body.charts.views.views30 = Number(body.charts.views.views30)
-		body.charts.views.views60 = Number(body.charts.views.views60)
-		body.charts.views.views90 = Number(body.charts.views.views90)
-		body.charts.views.views180 = Number(body.charts.views.views180)
-		body.charts.views.views365 = Number(body.charts.views.views365)
+		body.charts.views.views14 = Number(body.charts.views.views14);
+		body.charts.views.views30 = Number(body.charts.views.views30);
+		body.charts.views.views60 = Number(body.charts.views.views60);
+		body.charts.views.views90 = Number(body.charts.views.views90);
+		body.charts.views.views180 = Number(body.charts.views.views180);
+		body.charts.views.views365 = Number(body.charts.views.views365);
 		// toFloat -- Growth
 		body.charts.growth.subs = parseFloat(body.charts.growth.subs.toString());
 		body.charts.growth.views = parseFloat(body.charts.growth.views.toString());
@@ -72,7 +72,7 @@ export class YouTube {
 			item.date = new Date(item.date);
 			item.subs = Number(item.subs);
 			item.views = Number(item.views);
-		})
+		});
 		// #endregion data_daily
 
 		return body;
