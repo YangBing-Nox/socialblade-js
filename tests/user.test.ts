@@ -21,7 +21,7 @@ describe('Login with an Email and Token', () => {
 			process.env.SOCIALBLADE_EMAIL,
 			"KappaPride"
 		);
-			
+
 		expect(auth.status.error).to.be.true;
 		expect(socialblade.isAuthed()).to.be.false;
 	});

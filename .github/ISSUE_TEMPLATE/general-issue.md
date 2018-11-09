@@ -17,8 +17,8 @@ about: Report a General Issue with the library
 <!-- Put an X in the [ ] like [x] -->
 - [ ] Yes
 
-<!-- Type `go version` -->
-**Golang Version:** 
+<!-- Type `node -v` -->
+**Node Version:**
 
 **Which new Client method are you using?**
 <!-- Put an X in the [ ] like [x] -->

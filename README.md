@@ -1,6 +1,7 @@
 # Social Blade API in JavaScript [<img align="right" src="https://cdn.tcole.me/socialblade-small.png">](https://github.com/TimothyCole/socialblade-js)
 
 [![Build Status](https://travis-ci.com/TimothyCole/socialblade-js.svg?branch=master)](https://travis-ci.com/TimothyCole/socialblade-js)
+[![npm](https://img.shields.io/npm/v/socialblade.svg)](https://www.npmjs.com/package/socialblade)
 [![Personal Discord](https://img.shields.io/discord/313591755180081153.svg?label=Personal%20Discord&colorB=308bcd&maxAge=3600)](https://discordapp.com/invite/YFtfGwq)
 [![Social Blade Discord](https://img.shields.io/discord/125022847562285056.svg?label=Social%20Blade%20Discord%20(Not%20for%20Support)&colorB=c84329&maxAge=3600)](https://socialblade.com/discord)
 
