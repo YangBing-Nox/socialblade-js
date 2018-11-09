@@ -11,3 +11,4 @@ export * from './interfaces/user.interface';
 export * from './interfaces/dev.interface';
 export * from './interfaces/youtube.statsdata.interface';
 export * from './interfaces/twitch.statsdata.interface';
+export * from './interfaces/twitter.statsdata.interface';
