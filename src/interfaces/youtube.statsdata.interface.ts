@@ -1,17 +1,13 @@
+import { IResponseStatus } from "./common.interface";
+
 export interface IYouTubeStats {
-	status: IYouTubeStatsStatus;
+	status: IResponseStatus;
 	id: IYouTubeStatsID;
 	data?: IYouTubeStatsData;
 	rank?: IYouTubeStatsRank;
 	charts?: IYouTubeStatsCharts;
 	social?: IYouTubeStatsSocial;
 	data_daily?: IYouTubeStatsDataDaily[];
-};
-
-export interface IYouTubeStatsStatus {
-	response: number;
-	error: boolean | string;
-	message?: string;
 };
 
 export interface IYouTubeStatsID {
