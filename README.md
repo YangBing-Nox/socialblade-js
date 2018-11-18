@@ -23,7 +23,7 @@ npm install --save socialblade
 
 ## Usage
 Import the library into your project and construct a new client which will be used to access the API.  
-Use either the third-party `Auth` function or first-party `AuthAsUser` function to set the client as "active".
+Use the `Auth` function to set the client as "active".
 
 #### TypeScript
 ```ts
@@ -32,11 +32,6 @@ import { SocialBladeClient } from 'socialblade';
 const socialblade: SocialBladeClient = new SocialBladeClient();
 // Third-Party Auth
 socialblade.Auth("Third-Party API Key").then((data: IDeveloper) => {
-	console.log(data)
-});
-
-// First-Party Auth
-socialblade.AuthAsUser("User Email", "User Access Token").then((data: IUser) => {
 	console.log(data)
 });
 ```
@@ -48,14 +43,12 @@ const SocialBladeClient = require("socialblade").SocialBladeClient;
 const socialblade = new SocialBladeClient();
 // Third-Party Auth
 socialblade.Auth("Third-Party API Key").then(console.log)
-
-// First-Party Auth
-socialblade.AuthAsUser("User Email", "User Access Token").then(console.log)
 ```
 
 ## Examples
-#### Get YouTube Channel Stats &mdash; [ [Third-Party Auth](examples/youtube-stats-Auth.js), [First-Party Auth](examples/youtube-stats-AuthAsUser.js) ]
-#### Get Twitch Channel Stats &mdash; [ [Third-Party Auth](examples/twitch-stats-Auth.js), [First-Party Auth](examples/twitch-stats-AuthAsUser.js) ]
+#### Get YouTube Channel Stats &mdash; [Third-Party Auth](examples/youtube-stats-Auth.js)
+#### Get Twitch Channel Stats &mdash; [Third-Party Auth](examples/twitch-stats-Auth.js)
+#### Get Twitter Channel Stats &mdash; [Third-Party Auth](examples/twitter-stats-Auth.js)
 _More examples coming soon. Library still early development_
 
 ## Troubleshooting
